@@ -1,0 +1,56 @@
+{
+  "name": "ask-utils-mock",
+  "version": "0.0.1",
+  "description": "utility functions for ask-sdk",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "doc": "typedoc --out docs libs/",
+    "test:watch": "jest --watch",
+    "test:dev": "jest --watch --silent=false --verbose false --coverage"
+  },
+  "keywords": [
+    "alexa",
+    "ask-sdk",
+    "alexa-skill"
+  ],
+  "bugs": {
+    "url": "https://github.com/ask-utils/sdk-mocks/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ask-utils/sdk-mocks.git"
+  },
+  "author": "Hidetaka Okamoto <info@wp-kyoto.net> (https://wp-kyoto.net)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.3.12",
+    "@types/node": "^10.12.18",
+    "ask-sdk": "^2.3.0",
+    "ask-sdk-core": "^2.0.7",
+    "ask-sdk-model": "^1.3.1",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "typedoc": "^0.14.1",
+    "typescript": "^3.2.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/__tests__/*/*.+(ts|tsx|js)"
+    ]
+  }
+}
